@@ -10,10 +10,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" id="78F-dl-Z7O">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <view contentMode="scaleToFill" id="a5T-vZ-TP3">
+                    <rect key="frame" x="0.0" y="-100" width="320" height="300"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
+                    <color key="backgroundColor" red="0.1333333333" green="0.56470588239999997" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane" id="mxK-fO-VeD">
                     <rect key="frame" x="77" y="94" width="66" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -45,7 +46,6 @@
     </objects>
     <resources>
         <image name="airplane" width="66" height="21"/>
-        <image name="bg" width="320" height="109"/>
         <image name="clouds_center" width="191" height="31"/>
         <image name="clouds_left" width="101" height="31"/>
         <image name="clouds_right" width="101" height="31"/>

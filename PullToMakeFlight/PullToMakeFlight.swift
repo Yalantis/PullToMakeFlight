@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import PullToRefresh
 import CoreGraphics
 
 public class PullToMakeFlight: PullToRefresh {
@@ -175,12 +174,14 @@ class FlightAnimator : RefreshViewAnimator {
     
     private func finish() {
         refreshView.airplane.removeAllAnimations()
+        refreshView.airplane.layer.timeOffset = 0.0
         refreshView.airplane.addAnimation(CAKeyframeAnimation.animationWith(
             AnimationType.Position,
             values: [NSValue(CGPoint: CGPointMake(refreshView.frame.width / 2, 50)), NSValue(CGPoint: CGPointMake(refreshView.frame.width, -50))],
             keyTimes: [0, 1],
             duration: 0.3,
             beginTime:0))
+        refreshView.airplane.layer.speed = 1
     }
 }
 
