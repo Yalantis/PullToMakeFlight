@@ -7,25 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1274561F0D9DAF9CCE4587D4 /* Pods_PullToMakeFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704817DBF31E91EDE4C9625A /* Pods_PullToMakeFlight.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		463BD8330D532B860D59F11C /* Pods_PullToMakeFlightDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A2DF780E9C1A756A922D03 /* Pods_PullToMakeFlightDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4D13DDF31B1591780023CA04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D13DDF21B1591780023CA04 /* AppDelegate.swift */; };
 		4D13DDF51B1591780023CA04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D13DDF41B1591780023CA04 /* ViewController.swift */; };
 		4D13DDF81B1591780023CA04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D13DDF61B1591780023CA04 /* Main.storyboard */; };
 		4D13DDFA1B1591780023CA04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D13DDF91B1591780023CA04 /* Images.xcassets */; };
 		4D13DDFD1B1591780023CA04 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D13DDFB1B1591780023CA04 /* LaunchScreen.xib */; };
-		4D13DE091B1591780023CA04 /* PullToMakeFlightDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D13DE081B1591780023CA04 /* PullToMakeFlightDemoTests.swift */; };
+		4D13DE1C1B15934B0023CA04 /* PullToMakeFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D13DE1B1B15934B0023CA04 /* PullToMakeFlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D13DE2E1B15934C0023CA04 /* PullToMakeFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D13DE171B15934B0023CA04 /* PullToMakeFlight.framework */; };
+		4D13DE2F1B15934C0023CA04 /* PullToMakeFlight.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D13DE171B15934B0023CA04 /* PullToMakeFlight.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D13DE381B15935C0023CA04 /* PullToMakeFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D13DE371B15935C0023CA04 /* PullToMakeFlight.swift */; };
+		4D13DE3A1B159A080023CA04 /* FlightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D13DE391B159A080023CA04 /* FlightView.xib */; };
+		4D13DE3C1B159B7A0023CA04 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D13DE3B1B159B7A0023CA04 /* Image.xcassets */; };
+		4D44D9C11B1757C70026E116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D44D9C01B1757C70026E116 /* CoreGraphics.framework */; };
+		4D44D9C31B175D090026E116 /* CAKeyframeAnimation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44D9C21B175D090026E116 /* CAKeyframeAnimation+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4D13DE031B1591780023CA04 /* PBXContainerItemProxy */ = {
+		4D13DE2C1B15934C0023CA04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4D13DDE51B1591780023CA04 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D13DDEC1B1591780023CA04;
-			remoteInfo = PullToMakeFlightDemo;
+			remoteGlobalIDString = 4D13DE161B15934B0023CA04;
+			remoteInfo = PullToMakeFlight;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4D13DE351B15934C0023CA04 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D13DE2F1B15934C0023CA04 /* PullToMakeFlight.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		34A2DF780E9C1A756A922D03 /* Pods_PullToMakeFlightDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PullToMakeFlightDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D03C8432346BBECBBF35B7 /* Pods-PullToMakeFlightDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullToMakeFlightDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PullToMakeFlightDemo/Pods-PullToMakeFlightDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4D13DDED1B1591780023CA04 /* PullToMakeFlightDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToMakeFlightDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D13DDF11B1591780023CA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D13DDF21B1591780023CA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,9 +58,18 @@
 		4D13DDF71B1591780023CA04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D13DDF91B1591780023CA04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4D13DDFC1B1591780023CA04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4D13DE021B1591780023CA04 /* PullToMakeFlightDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PullToMakeFlightDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D13DE071B1591780023CA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D13DE081B1591780023CA04 /* PullToMakeFlightDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToMakeFlightDemoTests.swift; sourceTree = "<group>"; };
+		4D13DE171B15934B0023CA04 /* PullToMakeFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PullToMakeFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D13DE1A1B15934B0023CA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D13DE1B1B15934B0023CA04 /* PullToMakeFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PullToMakeFlight.h; sourceTree = "<group>"; };
+		4D13DE371B15935C0023CA04 /* PullToMakeFlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToMakeFlight.swift; sourceTree = "<group>"; };
+		4D13DE391B159A080023CA04 /* FlightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightView.xib; sourceTree = "<group>"; };
+		4D13DE3B1B159B7A0023CA04 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		4D44D9C01B1757C70026E116 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4D44D9C21B175D090026E116 /* CAKeyframeAnimation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAKeyframeAnimation+Extensions.swift"; sourceTree = "<group>"; };
+		5E9A991FB62A599C9094E33F /* Pods-PullToMakeFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullToMakeFlight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PullToMakeFlight/Pods-PullToMakeFlight.debug.xcconfig"; sourceTree = "<group>"; };
+		704817DBF31E91EDE4C9625A /* Pods_PullToMakeFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PullToMakeFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FDF781C2687C0741363BF5 /* Pods-PullToMakeFlightDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullToMakeFlightDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PullToMakeFlightDemo/Pods-PullToMakeFlightDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E818662B94091910C26FFA20 /* Pods-PullToMakeFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullToMakeFlight.release.xcconfig"; path = "Pods/Target Support Files/Pods-PullToMakeFlight/Pods-PullToMakeFlight.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,25 +77,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D13DE2E1B15934C0023CA04 /* PullToMakeFlight.framework in Frameworks */,
+				463BD8330D532B860D59F11C /* Pods_PullToMakeFlightDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D13DDFF1B1591780023CA04 /* Frameworks */ = {
+		4D13DE131B15934B0023CA04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D44D9C11B1757C70026E116 /* CoreGraphics.framework in Frameworks */,
+				1274561F0D9DAF9CCE4587D4 /* Pods_PullToMakeFlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16938DD7372AEBD78BE0E309 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E9A991FB62A599C9094E33F /* Pods-PullToMakeFlight.debug.xcconfig */,
+				E818662B94091910C26FFA20 /* Pods-PullToMakeFlight.release.xcconfig */,
+				C5FDF781C2687C0741363BF5 /* Pods-PullToMakeFlightDemo.debug.xcconfig */,
+				41D03C8432346BBECBBF35B7 /* Pods-PullToMakeFlightDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4D13DDE41B1591780023CA04 = {
 			isa = PBXGroup;
 			children = (
 				4D13DDEF1B1591780023CA04 /* PullToMakeFlightDemo */,
-				4D13DE051B1591780023CA04 /* PullToMakeFlightDemoTests */,
+				4D13DE181B15934B0023CA04 /* PullToMakeFlight */,
 				4D13DDEE1B1591780023CA04 /* Products */,
+				FA75FB787A74016D4BA728E8 /* Frameworks */,
+				16938DD7372AEBD78BE0E309 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				4D13DDED1B1591780023CA04 /* PullToMakeFlightDemo.app */,
-				4D13DE021B1591780023CA04 /* PullToMakeFlightDemoTests.xctest */,
+				4D13DE171B15934B0023CA04 /* PullToMakeFlight.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,60 +146,92 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4D13DE051B1591780023CA04 /* PullToMakeFlightDemoTests */ = {
+		4D13DE181B15934B0023CA04 /* PullToMakeFlight */ = {
 			isa = PBXGroup;
 			children = (
-				4D13DE081B1591780023CA04 /* PullToMakeFlightDemoTests.swift */,
-				4D13DE061B1591780023CA04 /* Supporting Files */,
+				4D44D9C21B175D090026E116 /* CAKeyframeAnimation+Extensions.swift */,
+				4D13DE1B1B15934B0023CA04 /* PullToMakeFlight.h */,
+				4D13DE191B15934B0023CA04 /* Supporting Files */,
+				4D13DE371B15935C0023CA04 /* PullToMakeFlight.swift */,
+				4D13DE391B159A080023CA04 /* FlightView.xib */,
+				4D13DE3B1B159B7A0023CA04 /* Image.xcassets */,
 			);
-			path = PullToMakeFlightDemoTests;
+			path = PullToMakeFlight;
 			sourceTree = "<group>";
 		};
-		4D13DE061B1591780023CA04 /* Supporting Files */ = {
+		4D13DE191B15934B0023CA04 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4D13DE071B1591780023CA04 /* Info.plist */,
+				4D13DE1A1B15934B0023CA04 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FA75FB787A74016D4BA728E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D44D9C01B1757C70026E116 /* CoreGraphics.framework */,
+				704817DBF31E91EDE4C9625A /* Pods_PullToMakeFlight.framework */,
+				34A2DF780E9C1A756A922D03 /* Pods_PullToMakeFlightDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D13DE141B15934B0023CA04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D13DE1C1B15934B0023CA04 /* PullToMakeFlight.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4D13DDEC1B1591780023CA04 /* PullToMakeFlightDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D13DE0C1B1591780023CA04 /* Build configuration list for PBXNativeTarget "PullToMakeFlightDemo" */;
 			buildPhases = (
+				50C53604688A8FAF12E690E6 /* Check Pods Manifest.lock */,
 				4D13DDE91B1591780023CA04 /* Sources */,
 				4D13DDEA1B1591780023CA04 /* Frameworks */,
 				4D13DDEB1B1591780023CA04 /* Resources */,
+				4D13DE351B15934C0023CA04 /* Embed Frameworks */,
+				259D56E65E7E880939FAAF9D /* Embed Pods Frameworks */,
+				393971868EA39903E556EEF1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4D13DE2D1B15934C0023CA04 /* PBXTargetDependency */,
 			);
 			name = PullToMakeFlightDemo;
 			productName = PullToMakeFlightDemo;
 			productReference = 4D13DDED1B1591780023CA04 /* PullToMakeFlightDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4D13DE011B1591780023CA04 /* PullToMakeFlightDemoTests */ = {
+		4D13DE161B15934B0023CA04 /* PullToMakeFlight */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D13DE0F1B1591780023CA04 /* Build configuration list for PBXNativeTarget "PullToMakeFlightDemoTests" */;
+			buildConfigurationList = 4D13DE341B15934C0023CA04 /* Build configuration list for PBXNativeTarget "PullToMakeFlight" */;
 			buildPhases = (
-				4D13DDFE1B1591780023CA04 /* Sources */,
-				4D13DDFF1B1591780023CA04 /* Frameworks */,
-				4D13DE001B1591780023CA04 /* Resources */,
+				2A9E108B116C4F418A2E2E7A /* Check Pods Manifest.lock */,
+				4D13DE121B15934B0023CA04 /* Sources */,
+				4D13DE131B15934B0023CA04 /* Frameworks */,
+				4D13DE141B15934B0023CA04 /* Headers */,
+				4D13DE151B15934B0023CA04 /* Resources */,
+				886CA1D09966083D9014D18F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4D13DE041B1591780023CA04 /* PBXTargetDependency */,
 			);
-			name = PullToMakeFlightDemoTests;
-			productName = PullToMakeFlightDemoTests;
-			productReference = 4D13DE021B1591780023CA04 /* PullToMakeFlightDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = PullToMakeFlight;
+			productName = PullToMakeFlight;
+			productReference = 4D13DE171B15934B0023CA04 /* PullToMakeFlight.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -162,9 +245,8 @@
 					4D13DDEC1B1591780023CA04 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
-					4D13DE011B1591780023CA04 = {
+					4D13DE161B15934B0023CA04 = {
 						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 4D13DDEC1B1591780023CA04;
 					};
 				};
 			};
@@ -182,7 +264,7 @@
 			projectRoot = "";
 			targets = (
 				4D13DDEC1B1591780023CA04 /* PullToMakeFlightDemo */,
-				4D13DE011B1591780023CA04 /* PullToMakeFlightDemoTests */,
+				4D13DE161B15934B0023CA04 /* PullToMakeFlight */,
 			);
 		};
 /* End PBXProject section */
@@ -198,14 +280,94 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D13DE001B1591780023CA04 /* Resources */ = {
+		4D13DE151B15934B0023CA04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D13DE3A1B159A080023CA04 /* FlightView.xib in Resources */,
+				4D13DE3C1B159B7A0023CA04 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		259D56E65E7E880939FAAF9D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PullToMakeFlightDemo/Pods-PullToMakeFlightDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A9E108B116C4F418A2E2E7A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		393971868EA39903E556EEF1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PullToMakeFlightDemo/Pods-PullToMakeFlightDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50C53604688A8FAF12E690E6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		886CA1D09966083D9014D18F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PullToMakeFlight/Pods-PullToMakeFlight-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D13DDE91B1591780023CA04 /* Sources */ = {
@@ -217,21 +379,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D13DDFE1B1591780023CA04 /* Sources */ = {
+		4D13DE121B15934B0023CA04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D13DE091B1591780023CA04 /* PullToMakeFlightDemoTests.swift in Sources */,
+				4D44D9C31B175D090026E116 /* CAKeyframeAnimation+Extensions.swift in Sources */,
+				4D13DE381B15935C0023CA04 /* PullToMakeFlight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D13DE041B1591780023CA04 /* PBXTargetDependency */ = {
+		4D13DE2D1B15934C0023CA04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4D13DDEC1B1591780023CA04 /* PullToMakeFlightDemo */;
-			targetProxy = 4D13DE031B1591780023CA04 /* PBXContainerItemProxy */;
+			target = 4D13DE161B15934B0023CA04 /* PullToMakeFlight */;
+			targetProxy = 4D13DE2C1B15934C0023CA04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +501,7 @@
 		};
 		4D13DE0D1B1591780023CA04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5FDF781C2687C0741363BF5 /* Pods-PullToMakeFlightDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PullToMakeFlightDemo/Info.plist;
@@ -348,6 +512,7 @@
 		};
 		4D13DE0E1B1591780023CA04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D03C8432346BBECBBF35B7 /* Pods-PullToMakeFlightDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PullToMakeFlightDemo/Info.plist;
@@ -356,37 +521,50 @@
 			};
 			name = Release;
 		};
-		4D13DE101B1591780023CA04 /* Debug */ = {
+		4D13DE301B15934C0023CA04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9A991FB62A599C9094E33F /* Pods-PullToMakeFlight.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = PullToMakeFlightDemoTests/Info.plist;
+				INFOPLIST_FILE = PullToMakeFlight/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PullToMakeFlightDemo.app/PullToMakeFlightDemo";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		4D13DE111B1591780023CA04 /* Release */ = {
+		4D13DE311B15934C0023CA04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E818662B94091910C26FFA20 /* Pods-PullToMakeFlight.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PullToMakeFlightDemoTests/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PullToMakeFlight/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PullToMakeFlightDemo.app/PullToMakeFlightDemo";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -409,14 +587,16 @@
 				4D13DE0E1B1591780023CA04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		4D13DE0F1B1591780023CA04 /* Build configuration list for PBXNativeTarget "PullToMakeFlightDemoTests" */ = {
+		4D13DE341B15934C0023CA04 /* Build configuration list for PBXNativeTarget "PullToMakeFlight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D13DE101B1591780023CA04 /* Debug */,
-				4D13DE111B1591780023CA04 /* Release */,
+				4D13DE301B15934C0023CA04 /* Debug */,
+				4D13DE311B15934C0023CA04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import PullToMakeFlight
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class ViewController: UITableViewController {
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableView.addPullToRefresh(PullToMakeFlight(), action: { () -> () in
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW,
+                Int64(5 * Double(NSEC_PER_SEC)))
+            dispatch_after(delayTime, dispatch_get_main_queue(), {[unowned self] in
+                self.tableView.endRefresing()
+                })
+        })
         // Do any additional setup after loading the view, typically from a nib.
     }
 
