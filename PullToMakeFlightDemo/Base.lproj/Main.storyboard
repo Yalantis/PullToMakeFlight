@@ -83,6 +83,9 @@
                     <navigationItem key="navigationItem" title="World Tours" id="e7i-cD-j3N">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="mq8-OK-N4c">
                             <color key="tintColor" red="0.1333333333" green="0.56470588239999997" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="refresh" destination="d50-SL-Y7Z" id="hXU-81-5cp"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>

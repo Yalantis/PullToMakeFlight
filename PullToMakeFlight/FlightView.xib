@@ -10,8 +10,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" id="a5T-vZ-TP3">
-                    <rect key="frame" x="0.0" y="-100" width="320" height="300"/>
+                <view contentMode="scaleToFill" id="a5T-vZ-TP3" userLabel="background">
+                    <rect key="frame" x="0.0" y="-200" width="320" height="400"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" red="0.1333333333" green="0.56470588239999997" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
@@ -29,7 +29,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_full" id="xmx-8h-ZEp">
-                    <rect key="frame" x="280" y="8" width="2" height="80"/>
+                    <rect key="frame" x="280" y="6" width="2" height="80"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" id="JD0-Ji-dyw">

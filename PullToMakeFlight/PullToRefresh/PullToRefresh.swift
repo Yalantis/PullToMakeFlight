@@ -69,8 +69,8 @@ public class PullToRefresh: NSObject {
                     self.scrollView?.contentInset = self.scrollViewDefaultInsets
                     self.scrollView?.contentOffset.y = -self.scrollViewDefaultInsets.top
                     }, completion: { finished in
-                        self.state = .Inital
                         self.addScrollViewObserving()
+                        self.state = .Inital                        
                 })
             default: break
             }

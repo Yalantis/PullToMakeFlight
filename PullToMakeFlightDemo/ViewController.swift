@@ -21,5 +21,10 @@ class ViewController: UITableViewController {
                 })
         })
     }
+    
+    @IBAction
+    private func refresh() {
+        tableView.startRefreshing()
+    }
 }
 
