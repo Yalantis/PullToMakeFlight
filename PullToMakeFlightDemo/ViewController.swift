@@ -13,6 +13,8 @@ class ViewController: UITableViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        
         tableView.addPullToRefresh(PullToMakeFlight(), action: { () -> () in
             let delayTime = dispatch_time(DISPATCH_TIME_NOW,
                 Int64(5 * Double(NSEC_PER_SEC)))
