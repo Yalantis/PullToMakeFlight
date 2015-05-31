@@ -17,7 +17,24 @@
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane" id="mxK-fO-VeD">
                     <rect key="frame" x="77" y="94" width="66" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_full" id="LVe-SW-0Ik">
+                    <rect key="frame" x="46" y="6" width="2" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <rect key="contentStretch" x="0.5" y="0.0" width="0.0" height="0.0"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" id="9xG-d7-bvS">
+                    <rect key="frame" x="42" y="84" width="10" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_full" id="xmx-8h-ZEp">
+                    <rect key="frame" x="280" y="8" width="2" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" id="JD0-Ji-dyw">
+                    <rect key="frame" x="276" y="84" width="10" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds_left" id="IBt-Es-54x">
                     <rect key="frame" x="0.0" y="104" width="101" height="31"/>
@@ -40,12 +57,18 @@
                 <outlet property="cloudsCenter" destination="bBF-cm-fPX" id="2dD-Ps-i12"/>
                 <outlet property="cloudsLeft" destination="IBt-Es-54x" id="xFX-s7-rBY"/>
                 <outlet property="cloudsRight" destination="XHq-gv-l95" id="9Cs-4L-MTK"/>
+                <outlet property="leftArrow" destination="9xG-d7-bvS" id="EXN-ub-wKH"/>
+                <outlet property="leftArrowStick" destination="LVe-SW-0Ik" id="1ri-Ye-kFq"/>
+                <outlet property="rightArrow" destination="JD0-Ji-dyw" id="XET-37-xNx"/>
+                <outlet property="rightArrowStick" destination="xmx-8h-ZEp" id="qr3-Kj-kS0"/>
             </connections>
             <point key="canvasLocation" x="314" y="342.5"/>
         </view>
     </objects>
     <resources>
         <image name="airplane" width="66" height="21"/>
+        <image name="arrow" width="16" height="21"/>
+        <image name="arrow_full" width="4" height="114"/>
         <image name="clouds_center" width="191" height="31"/>
         <image name="clouds_left" width="101" height="31"/>
         <image name="clouds_right" width="101" height="31"/>

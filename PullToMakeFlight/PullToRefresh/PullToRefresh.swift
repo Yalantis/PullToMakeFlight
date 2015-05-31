@@ -46,7 +46,6 @@ public class PullToRefresh: NSObject {
     
     var state: State = .Inital {
         didSet {
-            println("\(state.description) \(NSDate.timeIntervalSinceReferenceDate())")
             animator.animateState(state)
             switch state {
             case .Loading:
@@ -113,7 +112,7 @@ public class PullToRefresh: NSObject {
                 if state == State.Releasing(progress: 1) && scrollView?.dragging == false {
                     state = .Loading
                 } else if state != State.Loading && state != State.Finished {
-                    state = .Releasing(progress: 1)
+                    state = .Releasing(progress: -offset / refreshViewHeight)
                 }
             default: break
             }
