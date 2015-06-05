@@ -15,6 +15,7 @@ class ViewController: UITableViewController {
         
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
+        //review каждый раз на viewDidAppear добавляем?
         tableView.addPullToRefresh(PullToMakeFlight(), action: { () -> () in
             let delayTime = dispatch_time(DISPATCH_TIME_NOW,
                 Int64(5 * Double(NSEC_PER_SEC)))
