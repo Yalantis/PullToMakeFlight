@@ -73,7 +73,7 @@ class FlightAnimator : RefreshViewAnimator {
         // clouds center
         
         refreshView.cloudsCenter.removeAllAnimations()
-        refreshView.cloudsCenter.transform = CGAffineTransformMakeScale(1, 1) //review 1.0 
+        refreshView.cloudsCenter.transform = CGAffineTransformMakeScale(1.0, 1.0)
         refreshView.cloudsCenter.layer.timeOffset = 0.0
         
         refreshView.cloudsCenter.addAnimation(CAKeyframeAnimation.animationWith(

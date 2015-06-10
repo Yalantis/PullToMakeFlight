@@ -89,7 +89,6 @@ public class PullToRefresh: NSObject {
         self.init(refreshView: refreshView, animator: DefaultViewAnimator(refreshView: refreshView))
     }
     
-    //review в начало deinit, наверное
     deinit {
         removeScrollViewObserving()
     }
@@ -117,9 +116,6 @@ public class PullToRefresh: NSObject {
                 }
             default: break
             }
-        } else {
-            //review: финт такой =) там же пусто всегда, че его звать
-            super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
         }
         
         previousScrollViewOffset.y = scrollView!.contentOffset.y
@@ -164,7 +160,6 @@ public enum State:Equatable, Printable {
     }
 }
 
-//review научи меня как этим пользоваться, ничего не понял
 public func ==(a: State, b: State) -> Bool {
     switch (a, b) {
     case (.Inital, .Inital): return true
@@ -227,7 +222,6 @@ class DefaultViewAnimator: RefreshViewAnimator {
             var transform = CGAffineTransformIdentity
             transform = CGAffineTransformScale(transform, progress, progress);
             
-            //review M_1_PI вместо 3.14
             transform = CGAffineTransformRotate(transform, 3.14 * progress * 2);
             refreshView.activicyIndicator.transform = transform
         case .Loading: refreshView.activicyIndicator.startAnimating()
