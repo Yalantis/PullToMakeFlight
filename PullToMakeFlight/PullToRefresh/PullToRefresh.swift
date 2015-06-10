@@ -116,8 +116,6 @@ public class PullToRefresh: NSObject {
                 }
             default: break
             }
-        } else {
-            super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
         }
         
         previousScrollViewOffset.y = scrollView!.contentOffset.y
@@ -223,6 +221,7 @@ class DefaultViewAnimator: RefreshViewAnimator {
         case .Releasing(let progress):
             var transform = CGAffineTransformIdentity
             transform = CGAffineTransformScale(transform, progress, progress);
+            
             transform = CGAffineTransformRotate(transform, 3.14 * progress * 2);
             refreshView.activicyIndicator.transform = transform
         case .Loading: refreshView.activicyIndicator.startAnimating()
