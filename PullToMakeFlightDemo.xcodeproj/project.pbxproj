@@ -224,6 +224,8 @@
 		4D13DDE51B1591780023CA04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Yalantis;
 				TargetAttributes = {

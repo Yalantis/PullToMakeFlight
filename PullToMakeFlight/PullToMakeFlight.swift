@@ -179,7 +179,7 @@ class FlightAnimator : RefreshViewAnimator {
         
         refreshView.leftArrow.frame = CGRectMake(
             refreshView.leftArrow.frame.origin.x,
-            refreshView.cloudsRight.layer.presentationLayer().frame.origin.y - refreshView.leftArrow.frame.height,
+            refreshView.cloudsRight.layer.presentationLayer()!.frame.origin.y - refreshView.leftArrow.frame.height,
             refreshView.leftArrow.frame.width,
             refreshView.leftArrow.frame.height)
         
