@@ -3,7 +3,7 @@
 
 Custom animated pull-to-refresh that can be easily added to UIScrollView
 
-[![Yalantis](https://raw.githubusercontent.com/Yalantis/PullToMakeFlight/master/PullToMakeFlightDemo/Resources/badge_dark.png)](http://yalantis.com/?utm_source=github)
+[![Yalantis](https://raw.githubusercontent.com/Yalantis/PullToMakeFlight/master/PullToMakeFlightDemo/Resources/badge_dark.png)](https://yalantis.com/?utm_source=github)
 
 <img src="https://raw.githubusercontent.com/Yalantis/PullToMakeFlight/master/PullToMakeFlightDemo/Resources/tours-pull-airplane.gif" />
 
