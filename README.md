@@ -48,7 +48,7 @@ tableView.addPullToRefresh(refresher, action: {
 After the action is completed and you want to hide the refresher:
 
 ```swift
-tableView.endRefresing()
+tableView.endRefreshing()
 ```
  
 You can also start refreshing programmatically:
