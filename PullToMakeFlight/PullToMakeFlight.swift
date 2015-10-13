@@ -18,6 +18,7 @@ public class PullToMakeFlight: PullToRefresh {
         let refreshView =  NSBundle(forClass: self.dynamicType).loadNibNamed("FlightView", owner: nil, options: nil).first as! FlightView
         let animator =  FlightAnimator(refreshView: refreshView)
         self.init(refreshView: refreshView, animator: animator)
+        self.hideDelay = 0.2
     }
 }
 
