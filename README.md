@@ -7,13 +7,10 @@ Custom animated pull-to-refresh that can be easily added to UIScrollView
 
 <img src="https://raw.githubusercontent.com/Yalantis/PullToMakeFlight/master/PullToMakeFlightDemo/Resources/tours-pull-airplane.gif" />
 
-## Swift 2.0
-Currently we maintain a [branch](https://github.com/Yalantis/PullToMakeFlight/tree/swift_2.0) to provide support for Swift 2.0.
-
 ##Requirements
 - iOS 8.0+
-- Xcode 6.3
-- Swift 1.2
+- Xcode 7
+- Swift 2
 
 ##Installing with [CocoaPods](https://cocoapods.org)
 

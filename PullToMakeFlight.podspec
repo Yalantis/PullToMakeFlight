@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PullToMakeFlight"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "Custom animated pull-to-refresh that can be easily added to UIScrollView"
 
   s.homepage     = "http://yalantis.com"
@@ -16,11 +16,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
 
 
-  s.source       = { :git => "https://github.com/Yalantis/PullToMakeFlight.git", :tag => "1.0" }
+  s.source       = { :git => "https://github.com/Yalantis/PullToMakeFlight.git", :tag => "1.1" }
   s.source_files = "PullToMakeFlight/**/*.{h,swift}"
   s.resources    = 'PullToMakeFlight/**/*.{png,xib}'
   s.module_name  = "PullToMakeFlight"
   s.requires_arc = true
   s.framework   = 'CoreGraphics'
+
+  s.dependency 'PullToRefresher', '~> 1.0'
 
 end

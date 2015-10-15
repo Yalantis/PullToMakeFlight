@@ -1,13 +1,14 @@
 //
-//  PullToMakeFlight.swift
-//  PullToMakeFlightDemo
-//
 //  Created by Anastasiya Gorban on 5/27/15.
 //  Copyright (c) 2015 Yalantis. All rights reserved.
+//
+//  Licensed under the MIT license: http://opensource.org/licenses/MIT
+//  Latest version can be found at https://github.com/Yalantis/PullToMakeFlight
 //
 
 import Foundation
 import CoreGraphics
+import PullToRefresh
 
 // MARK: - PullToMakeFlight
 
@@ -17,6 +18,7 @@ public class PullToMakeFlight: PullToRefresh {
         let refreshView =  NSBundle(forClass: self.dynamicType).loadNibNamed("FlightView", owner: nil, options: nil).first as! FlightView
         let animator =  FlightAnimator(refreshView: refreshView)
         self.init(refreshView: refreshView, animator: animator)
+        self.hideDelay = 0.2
     }
 }
 
@@ -179,7 +181,7 @@ class FlightAnimator : RefreshViewAnimator {
         
         refreshView.leftArrow.frame = CGRectMake(
             refreshView.leftArrow.frame.origin.x,
-            refreshView.cloudsRight.layer.presentationLayer().frame.origin.y - refreshView.leftArrow.frame.height,
+            refreshView.cloudsRight.layer.presentationLayer()!.frame.origin.y - refreshView.leftArrow.frame.height,
             refreshView.leftArrow.frame.width,
             refreshView.leftArrow.frame.height)
         
