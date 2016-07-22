@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Yalantis/PullToMakeFlight.git", :tag => "1.1" }
   s.source_files = "PullToMakeFlight/**/*.{h,swift}"
-  s.resources    = 'PullToMakeFlight/**/*.{png,xib}'
+  s.resources    = ['PullToMakeFlight/Image.xcassets', 'PullToMakeFlight/**/*.{png,xib}']
   s.module_name  = "PullToMakeFlight"
   s.requires_arc = true
   s.framework   = 'CoreGraphics'
