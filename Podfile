@@ -1,4 +1,8 @@
 platform :ios, '8.0'
 use_frameworks!
 
-pod "PullToMakeFlight", :path => "./"
+target 'PullToMakeFlightDemo' do
+
+	pod "PullToMakeFlight", :path => "./"
+
+end
