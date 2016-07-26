@@ -16,6 +16,7 @@ public class PullToMakeFlight: PullToRefresh {
     public convenience init() {
         
         let refreshView =  NSBundle(forClass: self.dynamicType).loadNibNamed("FlightView", owner: nil, options: nil).first as! FlightView
+        refreshView.clipsToBounds = true
         let animator =  FlightAnimator(refreshView: refreshView)
         self.init(refreshView: refreshView, animator: animator)
         self.hideDelay = 0.2
