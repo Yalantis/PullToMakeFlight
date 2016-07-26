@@ -16,7 +16,7 @@ Custom animated pull-to-refresh that can be easily added to UIScrollView
 
 ```ruby
 use_frameworks!
-pod 'PullToMakeFlight', '~> 1.1.1'
+pod 'PullToMakeFlight', '~> 1.1.2'
 ```
 
 ##Usage
