@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PullToMakeFlight"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "Custom animated pull-to-refresh that can be easily added to UIScrollView"
 
   s.homepage     = "http://yalantis.com"
