@@ -15,18 +15,18 @@ class ViewController: UITableViewController {
         
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
-        tableView.addPullToRefresh(PullToMakeFlight(), action: { () -> () in
+        tableView.addPullToRefresh(PullToMakeFlight(atPosition: .Top), action: { () -> () in
             let delayTime = dispatch_time(DISPATCH_TIME_NOW,
                 Int64(5 * Double(NSEC_PER_SEC)))
             dispatch_after(delayTime, dispatch_get_main_queue(), {[unowned self] in
-                self.tableView.endRefreshing()
+                self.tableView.endRefreshing(at: .Top)
                 })
         })
     }
     
     @IBAction
     private func refresh() {
-        tableView.startRefreshing()
+        tableView.startRefreshing(at: .Top)
     }
 }
 
