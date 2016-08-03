@@ -13,12 +13,12 @@ import PullToRefresh
 // MARK: - PullToMakeFlight
 
 public class PullToMakeFlight: PullToRefresh {
-    public convenience init() {
-        
+    public convenience init(atPosition position: Position) {
+        let height: CGFloat = 40
         let refreshView =  NSBundle(forClass: self.dynamicType).loadNibNamed("FlightView", owner: nil, options: nil).first as! FlightView
         refreshView.clipsToBounds = true
         let animator =  FlightAnimator(refreshView: refreshView)
-        self.init(refreshView: refreshView, animator: animator)
+        self.init(refreshView: refreshView, animator: animator, height: height, position: position)
         self.hideDelay = 0.2
     }
 }
@@ -58,7 +58,7 @@ class FlightAnimator : RefreshViewAnimator {
     
     func animateState(state: State) {
         switch state {
-        case .Inital:
+        case .Initial:
             initalLayout()
         case .Releasing(let progress):
             releasingAnimation(progress)
