@@ -16,8 +16,8 @@ class ViewController: UITableViewController {
         
         tableView.separatorStyle = .none
         
-        tableView.addPullToRefresh(PullToMakeFlight(atPosition: .top)) {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [unowned self] in
+        tableView.addPullToRefresh(PullToMakeFlight(at: .top)) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) { 
                 self.tableView.endRefreshing(at: .top)
             }
         }
