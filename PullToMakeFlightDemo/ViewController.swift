@@ -10,23 +10,21 @@ import UIKit
 import PullToMakeFlight
 
 class ViewController: UITableViewController {
-    override func viewDidAppear(animated: Bool) {
+    
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        tableView.separatorStyle = .none
         
-        tableView.addPullToRefresh(PullToMakeFlight(atPosition: .Top), action: { () -> () in
-            let delayTime = dispatch_time(DISPATCH_TIME_NOW,
-                Int64(5 * Double(NSEC_PER_SEC)))
-            dispatch_after(delayTime, dispatch_get_main_queue(), {[unowned self] in
-                self.tableView.endRefreshing(at: .Top)
-                })
-        })
+        tableView.addPullToRefresh(PullToMakeFlight(atPosition: .top)) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [unowned self] in
+                self.tableView.endRefreshing(at: .top)
+            }
+        }
     }
     
-    @IBAction
-    private func refresh() {
-        tableView.startRefreshing(at: .Top)
+    @IBAction fileprivate func refresh() {
+        tableView.startRefreshing(at: .top)
     }
 }
 
