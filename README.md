@@ -8,15 +8,16 @@ Custom animated pull-to-refresh that can be easily added to UIScrollView
 <img src="https://raw.githubusercontent.com/Yalantis/PullToMakeFlight/master/PullToMakeFlightDemo/Resources/tours-pull-airplane.gif" />
 
 ##Requirements
+
 - iOS 8.0+
-- Xcode 7
-- Swift 2
+- Xcode 8
+- Swift 3
 
 ##Installing with [CocoaPods](https://cocoapods.org)
 
 ```ruby
 use_frameworks!
-pod 'PullToMakeFlight', '~> 1.1.2'
+pod 'PullToMakeFlight', '~> 2.0'
 ```
 
 ##Usage
@@ -29,17 +30,16 @@ import PullToMakeFlight
 
 Create refresher:
 
-
 ```swift
 let refresher = PullToMakeFlight()
 ```
 
-Add refresher to your UIScrollView subclass and provide action block:
+Add the refresher to your UIScrollView subclass and provide action block:
 
 ```swift
-tableView.addPullToRefresh(refresher, action: {
+tableView.addPullToRefresh(refresher) {
      // action to be performed (pull data from some source)
-})
+}
 ```
 
 After the action is completed and you want to hide the refresher:
