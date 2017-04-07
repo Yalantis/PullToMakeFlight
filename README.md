@@ -1,5 +1,5 @@
 
-##PullToMakeFlight
+## PullToMakeFlight
 
 Custom animated pull-to-refresh that can be easily added to UIScrollView
 
@@ -7,20 +7,20 @@ Custom animated pull-to-refresh that can be easily added to UIScrollView
 
 <img src="https://raw.githubusercontent.com/Yalantis/PullToMakeFlight/master/PullToMakeFlightDemo/Resources/tours-pull-airplane.gif" />
 
-##Requirements
+## Requirements
 
 - iOS 8.0+
 - Xcode 8
 - Swift 3
 
-##Installing with [CocoaPods](https://cocoapods.org)
+## Installing with [CocoaPods](https://cocoapods.org)
 
 ```ruby
 use_frameworks!
 pod 'PullToMakeFlight', '~> 2.0'
 ```
 
-##Usage
+## Usage
 
 At first, import PullToMakeFlight framework:
 
