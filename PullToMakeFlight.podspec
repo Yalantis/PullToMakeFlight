@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.framework   = 'CoreGraphics'
 
-  s.dependency 'PullToRefresher', '~> 2.0'
+  s.dependency 'PullToRefresher', '~> 3.0'
 
 end
