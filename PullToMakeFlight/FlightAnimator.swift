@@ -92,7 +92,7 @@ fileprivate extension FlightAnimator {
             timingFunctions: [.linear]
         )
         
-        airplaneAnimation.repeatCount = FLT_MAX;
+        airplaneAnimation.repeatCount = Float.greatestFiniteMagnitude;
         refreshView.airplane.layer.removeAllAnimations()
         refreshView.airplane.layer.add(airplaneAnimation, forKey: "")
         refreshView.airplane.layer.speed = 1
