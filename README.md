@@ -10,14 +10,14 @@ Custom animated pull-to-refresh that can be easily added to UIScrollView
 ## Requirements
 
 - iOS 8.0+
-- Xcode 8
-- Swift 3
+- Xcode 9
+- Swift 4
 
 ## Installing with [CocoaPods](https://cocoapods.org)
 
 ```ruby
 use_frameworks!
-pod 'PullToMakeFlight', '~> 2.0'
+pod 'PullToMakeFlight', '~> 3.0'
 ```
 
 ## Usage
